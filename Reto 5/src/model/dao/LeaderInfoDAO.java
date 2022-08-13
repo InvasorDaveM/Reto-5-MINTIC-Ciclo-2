@@ -31,7 +31,7 @@ public class LeaderInfoDAO {
                 dto.setFirstLastName(rset.getString("Nombre"));
                 dto.setResidence(rset.getString("Nombre"));
                 */
-                LeaderInfoDTO dto = new LeaderInfoDTO(rset.getInt("ID_Lider"), rset.getString("Nombre"), rset.getString("Nombre"), rset.getString("Nombre"));
+                LeaderInfoDTO dto = new LeaderInfoDTO(rset.getInt("ID_Lider"), rset.getString("Nombre"), rset.getString("Primer_Apellido"), rset.getString("Ciudad_Residencia"));
                 result.add(dto);
             }
 
